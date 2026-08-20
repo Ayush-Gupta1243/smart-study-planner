@@ -1,183 +1,261 @@
 # 📚 Smart Study Planner
 
-### Intelligent Study Planning & Academic Productivity Platform
+### AI-Powered Academic Planning & Productivity Platform
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react\&logoColor=white)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite\&logoColor=white)](https://vite.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js\&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-5-000000?logo=express\&logoColor=white)](https://expressjs.com/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss\&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](#-license)
+<p align="center">
 
-> **Smart Study Planner** is a modern academic productivity platform that automatically transforms subjects, study hours, difficulty levels, and examination dates into a structured and prioritized study schedule.
+<a href="https://smart-study-planner-jx84-bay.vercel.app/">
+<img src="https://img.shields.io/badge/🚀_Live_Demo-Smart_Study_Planner-7C3AED?style=for-the-badge" alt="Live Demo"/>
+</a>
+
+<a href="https://github.com/Ayush-Gupta1243/smart-study-planner">
+<img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+</a>
+
+</p>
+
+<p align="center">
+
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square\&logo=react\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square\&logo=vite\&logoColor=white)
+![Express](https://img.shields.io/badge/Express-5-000000?style=flat-square\&logo=express\&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square\&logo=tailwindcss\&logoColor=white)
+![Clerk](https://img.shields.io/badge/Clerk-Authentication-6C47FF?style=flat-square\&logo=clerk\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
+
+</p>
+
+---
+
+## 🚀 Live Demo
+
+### 👉 [Open Smart Study Planner](https://smart-study-planner-jx84-bay.vercel.app/)
+
+> Generate a personalized study plan based on your subjects, available study hours, difficulty levels, and examination dates.
 
 ---
 
 ## 🌟 Overview
 
-Planning what to study, when to study, and how much time to allocate to each subject can become difficult when multiple examinations are approaching.
+**Smart Study Planner** is a modern academic productivity platform designed to help students organize their preparation intelligently.
 
-**Smart Study Planner** solves this problem by generating a personalized study plan based on:
+Instead of manually creating complicated timetables, students can provide their subject information, available study time, difficulty levels, and examination dates. The application then generates a structured, prioritized study schedule.
 
-* 📚 Subjects
-* ⏱️ Available daily study hours
-* 🧠 Subject difficulty
-* 📅 Examination dates
-* 🎯 Required study hours
-* ⚡ Priority and urgency
+The platform combines **intelligent scheduling, analytics, visualization, authentication, file processing, and export functionality** into a single student-focused application.
 
-Instead of manually creating a timetable, students can provide their academic data and let the planner generate a structured schedule.
+### 🎯 Core Idea
 
-The application also provides a dashboard, analytics, warnings, and export functionality so students can understand and manage their preparation more effectively.
+> **Give your subjects. Set your available time. Let Smart Study Planner organize the preparation.**
 
 ---
 
-## ✨ Key Features
+# ✨ Features
 
-### 🧠 Intelligent Study Scheduling
+## 🧠 Intelligent Study Planning
 
-Automatically generates a day-by-day study schedule using subject difficulty, remaining study hours, and exam urgency.
+Automatically generates a personalized day-by-day study schedule based on:
 
-Subjects with higher difficulty and closer examination dates receive higher priority.
+* 📚 Subject workload
+* ⏱️ Daily available study hours
+* 🧠 Subject difficulty
+* 📅 Examination dates
+* 🎯 Required preparation hours
+* ⚡ Exam urgency
 
-### 📊 Personalized Dashboard
+The scheduling engine prioritizes subjects according to difficulty and how close their examination dates are.
 
-Get a quick overview of your preparation through:
+---
+
+## 📊 Smart Dashboard
+
+A centralized dashboard provides an overview of the generated preparation plan.
+
+It displays:
 
 * Total subjects
-* Planned study hours
-* Remaining workload
-* Upcoming examinations
-* Study progress
+* Study workload
+* Planned sessions
+* Preparation statistics
+* Upcoming exams
 * Schedule warnings
 
-### 📅 Day-by-Day Study Plan
+---
 
-View your complete study schedule organized by date.
+## 📅 Day-by-Day Study Plan
 
-Each study session includes:
+The generated plan can be viewed chronologically.
 
-* Subject
-* Allocated hours
-* Difficulty level
+Example:
 
-### 📈 Analytics
+```text
+20 August
+├── Mathematics      2h
+└── Computer Science 2h
 
-Understand your preparation visually through interactive charts and statistics.
+21 August
+├── Physics          2h
+└── Mathematics      2h
 
-Analytics help identify:
+22 August
+├── Computer Science 2h
+└── Chemistry        2h
+```
 
-* Study-hour distribution
+---
+
+## 📈 Visual Analytics
+
+Interactive analytics help students understand their preparation.
+
+The application provides visual insights into:
+
 * Subject workload
-* Difficulty distribution
-* Schedule utilization
+* Study-hour distribution
+* Difficulty levels
+* Schedule allocation
 * Overall preparation structure
 
-### 📂 Subject File Import
+---
 
-Import subjects from a simple `.txt` file instead of entering everything manually.
+## 📂 Subject File Upload
 
-Example:
+Students can upload a `.txt` file containing their subjects instead of entering them manually.
 
-```text
-Mathematics, 20, Hard, 2026-07-10
-Physics, 15, Medium, 2026-07-15
-Chemistry, 10, Easy, 2026-07-20
-Computer Science, 18, Hard, 2026-07-12
-```
-
-Comments can be added using `#`.
+### Format
 
 ```text
-# My Semester Subjects
-
-Mathematics, 20, Hard, 2026-07-10
-Physics, 15, Medium, 2026-07-15
+Subject Name, Total Hours, Difficulty, Exam Date
 ```
 
-### ⚠️ Smart Schedule Warnings
-
-If the planner determines that a subject may not receive enough study time before its examination, it generates a warning.
-
-Example:
+### Example
 
 ```text
-⚠️ Mathematics may not complete before exam on 2026-07-10
+Mathematics, 20, Hard, 2026-09-10
+Physics, 15, Medium, 2026-09-15
+Chemistry, 10, Easy, 2026-09-20
+Computer Science, 18, Hard, 2026-09-12
 ```
 
-### 📤 Export Your Plan
+The backend validates and parses the uploaded file before generating the study plan.
 
-Export your generated study plan for offline use and future reference.
+---
 
-Supported export functionality includes:
+## ⚠️ Schedule Warnings
+
+The planner detects subjects that may not receive enough preparation time before their examination.
+
+For example:
+
+```text
+⚠️ Mathematics may not complete before exam on 2026-09-10
+```
+
+This helps students identify potential preparation gaps early.
+
+---
+
+## 📤 Export Study Plans
+
+Generated schedules can be exported for offline use.
+
+Supported formats include:
 
 * 📄 PDF
 * 📊 CSV
 
-### 🌙 Modern User Interface
+Useful for:
 
-The application provides a modern dashboard experience with:
+* Printing
+* Sharing
+* Offline study
+* Personal records
 
+---
+
+## 🔐 Authentication
+
+The application uses **Clerk** for authentication.
+
+Authentication provides:
+
+* Secure sign-in
+* Sign-up
+* User sessions
+* Protected application access
+* User account management
+
+Unauthenticated users are presented with the authentication screen before accessing the study planner.
+
+---
+
+## 🌙 Modern UI
+
+The application features a modern student-focused interface with:
+
+* Dark futuristic design
 * Responsive layout
-* Dark-themed interface
 * Smooth animations
-* Interactive navigation
-* Toast notifications
+* Interactive cards
 * Data visualization
-* Mobile-friendly components
+* Toast notifications
+* Theme support
+* Mobile-friendly interface
 
 ---
 
 # 🏗️ Architecture
 
-Smart Study Planner follows a simple **Frontend + Backend** architecture.
-
 ```text
-                    ┌─────────────────────────┐
-                    │      Student / User     │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │     React Frontend      │
-                    │        + Vite           │
-                    ├─────────────────────────┤
-                    │ • Dashboard              │
-                    │ • Study Plan             │
-                    │ • Analytics              │
-                    │ • File Upload            │
-                    │ • Export                 │
-                    └────────────┬────────────┘
-                                 │
+                         ┌───────────────────────┐
+                         │       Student         │
+                         └───────────┬───────────┘
+                                     │
+                                     ▼
+                         ┌───────────────────────┐
+                         │     Clerk Auth        │
+                         │   Sign In / Sign Up   │
+                         └───────────┬───────────┘
+                                     │
+                                     ▼
+                  ┌──────────────────────────────────┐
+                  │         React Frontend            │
+                  │             + Vite                │
+                  ├──────────────────────────────────┤
+                  │ • Dashboard                       │
+                  │ • Study Plan                      │
+                  │ • Analytics                        │
+                  │ • File Upload                      │
+                  │ • Export                           │
+                  │ • Theme Management                 │
+                  └───────────────┬──────────────────┘
+                                  │
                               REST API
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │     Express Backend     │
-                    ├─────────────────────────┤
-                    │ • File Processing        │
-                    │ • Subject Parsing        │
-                    │ • Schedule Generation    │
-                    │ • Priority Calculation   │
-                    │ • Validation              │
-                    └────────────┬────────────┘
-                                 │
-                                 ▼
-                    ┌─────────────────────────┐
-                    │   Generated Study Plan  │
-                    │   + Warnings + Stats    │
-                    └─────────────────────────┘
+                                  │
+                                  ▼
+                  ┌──────────────────────────────────┐
+                  │         Express Backend           │
+                  ├──────────────────────────────────┤
+                  │ • File Processing                  │
+                  │ • Subject Parsing                  │
+                  │ • Priority Calculation             │
+                  │ • Schedule Generation              │
+                  │ • Validation                       │
+                  └───────────────┬──────────────────┘
+                                  │
+                                  ▼
+                       ┌──────────────────────┐
+                       │  Personalized Plan   │
+                       │ + Analytics + Alerts  │
+                       └──────────────────────┘
 ```
 
 ---
 
-# ⚙️ How the Scheduler Works
+# ⚙️ Scheduling Algorithm
 
-The planner calculates priority using two major factors:
+The planner uses two major factors for calculating subject priority.
 
-### 1. Difficulty
-
-Each subject receives a difficulty weight:
+### Difficulty Weight
 
 | Difficulty | Weight |
 | ---------- | -----: |
@@ -185,25 +263,62 @@ Each subject receives a difficulty weight:
 | Medium     |      2 |
 | Hard       |      3 |
 
-### 2. Exam Urgency
+### Priority Calculation
 
-The closer the examination date, the higher the urgency.
-
-The final priority is calculated using:
+The scheduler combines difficulty and exam urgency:
 
 ```text
 Priority = (Difficulty × 0.6) + (Urgency × 0.4)
 ```
 
-The scheduler then allocates available daily study hours to the highest-priority subjects while respecting:
+Higher-priority subjects receive study time first.
 
+The scheduler also considers:
+
+* Remaining study hours
 * Daily study limit
-* Session length
-* Required study hours
+* Session duration
 * Examination dates
-* Remaining workload
+* Available preparation days
 
-This produces a practical day-by-day study schedule.
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+| Technology      | Purpose             |
+| --------------- | ------------------- |
+| React 19        | UI development      |
+| Vite            | Build & development |
+| Tailwind CSS    | Styling             |
+| Framer Motion   | Animations          |
+| Recharts        | Analytics & charts  |
+| Lucide React    | Icons               |
+| React Hot Toast | Notifications       |
+| jsPDF           | PDF generation      |
+| jsPDF AutoTable | PDF tables          |
+| PapaParse       | CSV processing      |
+
+The frontend package includes React, Vite, Tailwind CSS, Framer Motion, Recharts, jsPDF, PapaParse and related UI libraries.
+
+## Backend
+
+| Technology | Purpose               |
+| ---------- | --------------------- |
+| Node.js    | Runtime               |
+| Express.js | REST API              |
+| Multer     | File upload           |
+| CORS       | API communication     |
+| dotenv     | Environment variables |
+
+The Express backend provides health, upload, sample-data and study-plan generation endpoints.
+
+## Authentication
+
+| Technology | Purpose                          |
+| ---------- | -------------------------------- |
+| Clerk      | Authentication & user management |
 
 ---
 
@@ -219,9 +334,6 @@ smart-study-planner/
 │   │
 │   ├── src/
 │   │   ├── assets/
-│   │   │   ├── hero.png
-│   │   │   ├── react.svg
-│   │   │   └── vite.svg
 │   │   │
 │   │   ├── components/
 │   │   │   ├── charts/
@@ -268,50 +380,17 @@ smart-study-planner/
 
 ---
 
-# 🛠️ Tech Stack
-
-## Frontend
-
-| Technology      | Purpose                     |
-| --------------- | --------------------------- |
-| React           | User interface              |
-| Vite            | Development & build tooling |
-| Tailwind CSS    | Styling                     |
-| Framer Motion   | Animations                  |
-| Recharts        | Data visualization          |
-| Lucide React    | Icons                       |
-| React Hot Toast | Notifications               |
-| jsPDF           | PDF generation              |
-| jsPDF AutoTable | PDF tables                  |
-| PapaParse       | CSV processing              |
-
-The frontend uses React with Vite and includes Recharts, Framer Motion, jsPDF, PapaParse and other UI utilities.
-
-## Backend
-
-| Technology | Purpose                   |
-| ---------- | ------------------------- |
-| Node.js    | Runtime                   |
-| Express.js | REST API                  |
-| Multer     | File uploads              |
-| CORS       | Cross-origin requests     |
-| dotenv     | Environment configuration |
-
-The backend exposes health, upload, sample-data and study-plan generation APIs.
-
----
-
 # 🚀 Getting Started
 
 ## Prerequisites
 
-Make sure you have installed:
+Install:
 
 * Node.js 18+
 * npm
 * Git
 
-Check your versions:
+Check installation:
 
 ```bash
 node --version
@@ -321,9 +400,7 @@ git --version
 
 ---
 
-# 📥 Installation
-
-## 1. Clone the Repository
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/Ayush-Gupta1243/smart-study-planner.git
@@ -335,7 +412,7 @@ cd smart-study-planner
 
 ---
 
-## 2. Install Frontend Dependencies
+## 2️⃣ Install Frontend
 
 ```bash
 cd frontend
@@ -344,7 +421,25 @@ npm install
 
 ---
 
-## 3. Install Backend Dependencies
+## 3️⃣ Configure Clerk
+
+Create:
+
+```text
+frontend/.env.local
+```
+
+Add your Clerk publishable key:
+
+```env
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_your_key_here
+```
+
+> Never expose your Clerk Secret Key in frontend code or commit it to GitHub.
+
+---
+
+## 4️⃣ Install Backend
 
 Open another terminal:
 
@@ -355,23 +450,22 @@ npm install
 
 ---
 
-# ▶️ Running the Application
+# ▶️ Run Locally
 
 ## Start Backend
 
-From the `backend` directory:
-
 ```bash
+cd backend
 npm start
 ```
 
-Backend will run on:
+Backend:
 
 ```text
 http://localhost:5000
 ```
 
-Health check:
+Health endpoint:
 
 ```text
 http://localhost:5000/api/health
@@ -381,19 +475,16 @@ http://localhost:5000/api/health
 
 ## Start Frontend
 
-From the `frontend` directory:
-
 ```bash
+cd frontend
 npm run dev
 ```
 
-Vite will provide a local development URL, typically:
+Open:
 
 ```text
 http://localhost:5173
 ```
-
-Open the URL in your browser.
 
 ---
 
@@ -405,25 +496,30 @@ Open the URL in your browser.
 GET /api/health
 ```
 
-Returns backend status and API version.
+Returns:
+
+```json
+{
+  "status": "ok",
+  "version": "1.0.0"
+}
+```
 
 ---
 
-## Upload Subjects
+## Upload Subject File
 
 ```http
 POST /api/upload
 ```
 
-Accepts a `.txt` file containing subject information.
+Accepts a `.txt` subject file.
 
 Maximum file size:
 
 ```text
 5 MB
 ```
-
-Only `.txt` files are accepted.
 
 ---
 
@@ -433,7 +529,7 @@ Only `.txt` files are accepted.
 POST /api/generate
 ```
 
-Example request:
+Example:
 
 ```json
 {
@@ -442,244 +538,136 @@ Example request:
       "name": "Mathematics",
       "totalHours": 20,
       "difficulty": "Hard",
-      "examDate": "2026-07-10"
+      "examDate": "2026-09-10"
     }
   ],
   "config": {
-    "startDate": "2026-06-20",
+    "startDate": "2026-08-20",
     "dailyHours": 4,
     "sessionLength": 2
   }
 }
 ```
 
-Example response:
-
-```json
-{
-  "schedule": {
-    "2026-06-20": [
-      {
-        "subjectName": "Mathematics",
-        "hours": 2,
-        "difficulty": "Hard"
-      }
-    ]
-  },
-  "warnings": []
-}
-```
-
 ---
 
-## Sample Data
+## Sample Dataset
 
 ```http
 GET /api/sample
 ```
 
-Returns sample subjects for testing the application.
-
----
-
-# 📝 Input Format
-
-The subject file follows this structure:
-
-```text
-Subject Name, Total Hours, Difficulty, Exam Date
-```
-
-Example:
-
-```text
-Mathematics, 20, Hard, 2026-07-10
-Physics, 15, Medium, 2026-07-15
-Chemistry, 10, Easy, 2026-07-20
-Computer Science, 18, Hard, 2026-07-12
-Biology, 12, Medium, 2026-07-18
-```
-
-### Supported Difficulty Levels
-
-```text
-Easy
-Medium
-Hard
-```
-
-### Date Format
-
-```text
-YYYY-MM-DD
-```
+Returns sample subject data for testing.
 
 ---
 
 # 🧪 Example Workflow
 
 ```text
-1. Open Smart Study Planner
-          ↓
-2. Upload subject data
-          ↓
-3. Configure daily study hours
-          ↓
-4. Set session duration
-          ↓
-5. Generate study plan
-          ↓
-6. Review Dashboard
-          ↓
-7. Explore Study Plan
-          ↓
-8. Analyze preparation
-          ↓
-9. Export the schedule
+                 START
+                   │
+                   ▼
+            🔐 Sign In / Sign Up
+                   │
+                   ▼
+            📂 Add Subject Data
+                   │
+                   ▼
+            ⚙️ Set Preferences
+                   │
+                   ▼
+          🧠 Generate Study Plan
+                   │
+                   ▼
+             📊 Dashboard
+              /          \
+             /            \
+            ▼              ▼
+      📅 Study Plan    📈 Analytics
+            │              │
+            └──────┬───────┘
+                   ▼
+              📤 Export
+                   │
+                   ▼
+                  END
 ```
 
 ---
 
-# 📊 Dashboard
-
-The dashboard provides a centralized view of the generated plan.
-
-It includes:
-
-* Subject overview
-* Study workload
-* Schedule information
-* Preparation statistics
-* Warnings
-* Export options
-
----
-
-# 📅 Study Plan
-
-The Study Plan section presents the generated schedule in a date-wise format.
-
-Example:
+# 📊 Example Input
 
 ```text
-20 June
-├── Mathematics     2h
-└── Physics         2h
-
-21 June
-├── Mathematics     2h
-└── Computer Sci.   2h
-
-22 June
-├── Physics         2h
-└── Chemistry       2h
+Mathematics,20,Hard,2026-09-10
+Physics,15,Medium,2026-09-15
+Chemistry,10,Easy,2026-09-20
+Computer Science,18,Hard,2026-09-12
+English,8,Easy,2026-09-25
 ```
 
----
-
-# 📈 Analytics
-
-The Analytics section provides visual insights into the generated schedule.
-
-It helps students understand:
-
-* Which subjects require the most time
-* How study hours are distributed
-* Difficulty distribution
-* Overall workload
-* Schedule allocation
-
----
-
-# 📤 Export
-
-Students can export their generated plan for:
-
-* Offline reference
-* Printing
-* Sharing
-* Personal record keeping
-
-Available formats include:
-
-```text
-PDF
-CSV
-```
-
----
-
-# 🔐 Security & Validation
-
-The backend includes basic request and file validation.
-
-### File Upload Protection
-
-* `.txt` files only
-* Maximum upload size: 5 MB
-* Invalid subject rows are ignored
-* Empty subject datasets are rejected
-
-### API Validation
-
-The backend validates:
-
-* Subject availability
-* Start date
-* Daily study hours
-* Uploaded file content
+The scheduler processes this information and distributes available study hours across the preparation period.
 
 ---
 
 # ☁️ Deployment
 
-The application is designed as a full-stack project with separate frontend and backend services.
+The project is deployed and available online:
 
-Recommended deployment architecture:
+### 🌐 Production
+
+**[🚀 Launch Smart Study Planner](https://smart-study-planner-jx84-bay.vercel.app/)**
+
+Deployment architecture:
 
 ```text
-                 ┌───────────────┐
-                 │    GitHub     │
-                 └───────┬───────┘
-                         │
-               ┌─────────┴─────────┐
-               │                   │
-               ▼                   ▼
-        ┌─────────────┐     ┌─────────────┐
-        │  Frontend   │     │   Backend   │
-        │    Vite     │     │   Express   │
-        └─────────────┘     └─────────────┘
-               │                   │
-               └─────────┬─────────┘
-                         ▼
-                  Smart Study Planner
+GitHub
+   │
+   ▼
+Vercel
+   │
+   ├── React + Vite Frontend
+   │
+   └── Express Backend
+          │
+          ▼
+       REST APIs
 ```
-
-For local development, frontend and backend can be run independently and communicate through REST APIs.
 
 ---
 
 # 🔮 Roadmap
 
-Smart Study Planner is designed to grow into a complete academic productivity platform.
+The project can evolve into a complete academic productivity ecosystem.
 
-### Planned Features
+### Authentication & Accounts
 
-* [ ] User authentication
-* [ ] Persistent cloud study plans
-* [ ] Calendar integration
+* [x] Clerk authentication
+* [ ] Persistent user profiles
+* [ ] Cloud-saved study plans
+* [ ] User preferences
+
+### Productivity
+
 * [ ] Task completion tracking
 * [ ] Daily study reminders
-* [ ] Adaptive schedule adjustment
-* [ ] AI-powered study recommendations
-* [ ] Automatic timetable optimization
-* [ ] Progress tracking
+* [ ] Study streaks
 * [ ] Exam countdown
-* [ ] Notes management
-* [ ] Mobile application
-* [ ] PWA support
-* [ ] Cloud synchronization
+* [ ] Calendar integration
+
+### Intelligence
+
+* [ ] AI study recommendations
+* [ ] Adaptive schedule regeneration
+* [ ] Automatic workload balancing
 * [ ] Personalized learning insights
+
+### Platform
+
+* [ ] PWA support
+* [ ] Mobile application
+* [ ] Cloud synchronization
+* [ ] Offline mode
+* [ ] Notification system
 
 ---
 
@@ -687,53 +675,44 @@ Smart Study Planner is designed to grow into a complete academic productivity pl
 
 Contributions are welcome!
 
-If you want to improve Smart Study Planner:
-
-### 1. Fork the repository
+### Fork the repository
 
 ```bash
 git clone https://github.com/Ayush-Gupta1243/smart-study-planner.git
 ```
 
-### 2. Create a feature branch
+### Create a branch
 
 ```bash
 git checkout -b feature/your-feature
 ```
 
-### 3. Make your changes
+### Make changes
 
-Test your changes locally before submitting them.
+Test everything locally.
 
-### 4. Commit
+### Commit
 
 ```bash
 git add .
 git commit -m "Add: your feature"
 ```
 
-### 5. Push
+### Push
 
 ```bash
 git push origin feature/your-feature
 ```
 
-### 6. Open a Pull Request
-
-Please provide:
-
-* A clear description
-* Screenshots when applicable
-* Testing details
-* Any relevant issue reference
+Then open a Pull Request.
 
 ---
 
-# 🐛 Bug Reports & Feature Requests
+# 🐛 Bug Reports
 
-Found a bug or have an idea?
+Found an issue?
 
-Open an issue and include:
+Please open a GitHub issue with:
 
 ```text
 Problem:
@@ -744,53 +723,53 @@ Screenshots:
 Environment:
 ```
 
-Feature requests are also welcome.
-
 ---
 
-# 📌 Project Goals
+# 🎯 Project Vision
 
-Smart Study Planner aims to make academic planning:
+Students often know **what** they need to study but struggle with **when**, **how much**, and **what to prioritize**.
 
-> **Simple. Intelligent. Personalized. Actionable.**
+Smart Study Planner aims to solve this by converting academic workload into an actionable preparation strategy.
 
-The goal is not just to create another timetable generator, but to build a practical academic productivity system that helps students understand their workload and make better study decisions.
+### The vision:
 
----
-
-# 📚 Inspiration
-
-The project follows the philosophy of building practical, accessible and developer-friendly software with clear documentation and a modular architecture.
-
-The documentation structure takes inspiration from open-source projects such as **FOSSEE eSim**, which provides dedicated sections for architecture, project structure, installation, examples, contribution and developer documentation.
+> **Less time planning. More time learning.**
 
 ---
 
 # 👨‍💻 Author
 
-**Ayush Gupta**
+## Ayush Gupta
 
-B.Tech Computer Science & Engineering
+**B.Tech Computer Science & Engineering**
 
 GitHub:
 https://github.com/Ayush-Gupta1243
+
+Project:
+https://github.com/Ayush-Gupta1243/smart-study-planner
+
+Live Application:
+https://smart-study-planner-jx84-bay.vercel.app/
 
 ---
 
 # 📄 License
 
-This project is currently intended as an educational and portfolio project.
+This project is currently developed as an educational, academic and portfolio project.
 
-License details can be updated as the project evolves.
+License terms can be updated as the project evolves.
 
 ---
 
 <div align="center">
 
-### 📚 Smart Study Planner
+## 📚 Smart Study Planner
 
-**Plan smarter. Study better. Achieve more.**
+### Plan Smarter • Study Better • Achieve More
 
-Made with ❤️ for students and learners.
+**Built with React, Vite, Express & Clerk**
+
+⭐ If you find this project useful, consider giving it a star!
 
 </div>
